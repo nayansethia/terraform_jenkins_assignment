@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+    stages
+    {
+        stage('checkout from Git')
+    {
+        steps{
+            echo "Checking out from git"
+        
+        }
+    }
+        
+    stage('Building')
+    {
+        steps{
+        echo 'This is the build stage'
+        }
+        
+    }
+    stage('At Jenkins')
+    {
+        steps{
+            echo "At jenkins now"
+        }
+    }
+    }
+}
